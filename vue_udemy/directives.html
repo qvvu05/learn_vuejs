@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   
+   <div id="app">
+
+       <a :href="url">{{url}}</a>
+
+
+       <h1 @click="number++">{{number}}</h1>
+
+       <h1 @click="number--">Decrease</h1>
+
+
+       <form action="" @submit.prevent="number++">
+
+           <button type="submit">SUBMIT</button>
+
+
+       </form>
+
+   </div>
+
+
+
+   
+   
+ <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>  
+ 
+ 
+ 
+ <script>
+     
+     new Vue({
+         
+         el: '#app',
+         data: {
+             number: 10,
+             url: 'https://edwindiaz.com',
+             message: 'Hello'
+
+
+         }
+           
+     })
+    
+</script>
