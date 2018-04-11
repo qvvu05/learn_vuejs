@@ -2,6 +2,10 @@
 
 > Nuxt.js project
 
+## commit Git:
+never use command:
+$ git add .
+
 ## Build Setup
 
 ``` bash
@@ -19,6 +23,8 @@ $ npm start
 $ npm run generate
 ```
 # Acknowledgment
+Techmaster for place+computer and instruction
 This work is done with help from:
 https://scotch.io/tutorials/build-a-server-side-rendered-vue-app-with-nuxtjs 
+
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
