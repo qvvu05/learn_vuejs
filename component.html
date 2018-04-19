@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+    <div id="app">
+        <p>Nhung thu can mua:</p>
+        <ol>
+            <todo-item
+            v-for="item in todoList"
+            <!-- gắn todo attribute ( được định nghĩa trong component) với item -->
+            v-bind:todo="item"
+            v-bind:key="item.id"
+            >
+
+            </todo-item>
+        </ol>
+    </div>
+
+
+
+    <script src="vue.js"></script>
+    <script>
+        Vue.component('todo-item',{
+            props:['todo'],
+            template: '<li>{{todo.text}}</li>'
+        })
+
+        var app=new Vue({
+            el:'#app',
+            data:{
+                todoList:[
+                    {id:0, text:'Ca phao'},
+                    {id: 1, text: 'Ca chua' },
+                    {id: 2, text: 'dua chuot' }
+                ]
+            }
+        })
+    </script>
+</body>
+</html>
